@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class MultiplicationOperator : IOperator
+    class MultiplicationOperator : Operator
     {
 
         public Number execute(Number left, Number right)

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class DivisionOperator : IOperator
+    class DivisionOperator : Operator
     {
         public Number execute(Number left, Number right)
         {
-            return new Number(left.Value * right.Value);
+            return new Number(left.Value / right.Value);
         }
     }
 }

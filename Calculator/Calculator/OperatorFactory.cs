@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class OperatorFactory
+    public class OperatorFactory
     {
-        public IOperator getOperator(string type)
+        public Operator getOperator(Operation operation)
         {
-            switch (type)
+            switch (operation)
             {
-                case "+": return new AdditionOperator();
-                case "-": return new SubtractionOperation();
-                case "*": return new MultiplicationOperator();
-                case "/": return new DivisionOperator();
+                case Operation.ADDITION: return new AdditionOperator();
+                case Operation.SUBSTRACTION: return new SubtractionOperation();
+                case Operation.MULTIPLICATION: return new MultiplicationOperator();
+                case Operation.DIVISION: return new DivisionOperator();
                 default: throw new NotImplementedException();
             }
 

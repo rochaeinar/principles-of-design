@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    interface IOperator
+    public interface Operator
     {
         Number execute(Number left, Number right);
     }

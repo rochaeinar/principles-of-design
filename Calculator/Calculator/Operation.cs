@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    public class Number
+    public enum Operation
     {
-        public double Value { get; set; }
-        public Number(double Value)
-        {
-            this.Value = Value;
-        }
+        ADDITION,
+        SUBSTRACTION,
+        DIVISION,
+        MULTIPLICATION,
+        POW
     }
 }
