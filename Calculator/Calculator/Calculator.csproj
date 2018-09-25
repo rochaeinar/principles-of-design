@@ -44,7 +44,6 @@
     <Compile Include="AdditionOperator.cs" />
     <Compile Include="Calculator.cs" />
     <Compile Include="DivisionOperator.cs" />
-    <Compile Include="Interface1.cs" />
     <Compile Include="MultiplicationOperator.cs" />
     <Compile Include="Number.cs" />
     <Compile Include="Operator.cs" />
